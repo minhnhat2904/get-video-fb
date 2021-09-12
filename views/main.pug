@@ -1,0 +1,20 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='css/style.css')
+  link(rel='icon' type='image/png' href='img/icon.png')
+  title Get Video
+.container
+  form#link(action='' method='post')
+    input#link_fb(type='text' placeholder="Let's input your link video facebook")
+    .quality
+      input#sd(name='quality' type='radio' value='SD')
+      | SD
+      input#hd(name='quality' type='radio' value='HD')
+      | HD
+    button#submit(type='submit') Enter
+  .video
+    video#new_video(controls='')
+script(src='js/global.js')
